@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Tunes - Mood-Based Music Suggestion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>🎵 Mood Tunes</h1>
+            <p>How are you feeling today? Let us match your vibe!</p>
+        </header>
+
+        <div class="mood-selector">
+            <button class="mood-btn" data-mood="happy">😊 Happy</button>
+            <button class="mood-btn" data-mood="sad">😢 Sad</button>
+            <button class="mood-btn" data-mood="chill">🍃 Chill</button>
+            <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+            <button class="mood-btn" data-mood="sleepy">😴 Sleepy</button>
+        </div>
+
+        <div id="recommendations-section" class="hidden">
+            <h2>Your Custom Playlist</h2>
+            <p class="subtitle">We picked 3 unique tracks for your mood:</p>
+            <div id="songs-list" class="songs-grid"></div>
+        </div>
+
+        <div id="player-section" class="hidden">
+            <h3>Now Playing</h3>
+            <div class="video-container">
+                <div id="youtube-player"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
